@@ -3,6 +3,7 @@
 🔐 File Integrity Monitoring System (FIM) with Metadata Verification and User Alerts
 This is a lightweight File Integrity Monitoring (FIM) tool written in C, designed to help detect unauthorized changes to important files on your system. It tracks both file content integrity (via checksum) and file metadata changes (permissions, timestamps, ownership), and logs suspicious activity with optional desktop notifications.
 
+
 🧩 Features
 
 ✅ Checksum-based integrity checking using XOR.
@@ -26,6 +27,7 @@ SIEM-style alerts (fim_siem_log.txt): Tracks when the monitored file is accessed
 🚨 Desktop notification (Windows only) for real-time alerts.
 
 🖥️ Cross-platform: Works on both Windows and UNIX-like systems (limited metadata support on Windows).
+
 
 ⚙️ How It Works
 Prompts the user to enter a filename to monitor.
