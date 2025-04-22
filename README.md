@@ -8,12 +8,13 @@ This is a lightweight File Integrity Monitoring (FIM) tool written in C, designe
 🔍 Metadata tracking: detects changes in inode, permissions, ownership, and timestamps.
 👤 User verification: distinguishes changes made by the original user vs others.
 📋 Access logging for file access events.
-📁 Separate files for:
 
-Integrity data (checksum_store.txt)
-Metadata history (metadata_store.txt)
-Access logs (access_log.txt)
-SIEM-style alerts (fim_siem_log.txt)
+📁 Separate files for:
+Integrity data (checksum_store.txt) :Stores file checksums to detect integrity violations.
+Metadata history (metadata_store.txt): Stores metadata (inode, permissions, UID/GID, timestamps, username) of monitored files.
+Access logs (access_log.txt): Logs important system events (e.g., integrity changes, errors).
+SIEM-style alerts (fim_siem_log.txt): Tracks when the monitored file is accessed.
+
 🚨 Desktop notification (Windows only) for real-time alerts.
 🖥️ Cross-platform: Works on both Windows and UNIX-like systems (limited metadata support on Windows).
 
@@ -26,3 +27,11 @@ Compares the checksum to a stored version:
 If unchanged → logs success.
 If changed → raises an alert, updates checksum.
 Notifies via Windows MessageBox if tampering or metadata changes by another user are detected.
+
+
+👤 Authors
+Developed by:
+
+P. TANVEE SATYA
+B. HEMASRI VARAM
+P. VENKAT PAVAN
